@@ -1,0 +1,741 @@
+/* Google fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap');
+
+*,
+::before,
+::after {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-brand: #292929;
+    --color-gray: #D9D9D9;
+    --color-gray-darker: #7D7D7D;
+    --color-gray-dark: #C5C5C5;
+    --color-background: #FAFAFA;
+    
+    --padding-container: 80px 0;
+}
+
+body,
+input,
+textarea,
+button {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    
+    opacity: 1;
+    background-image: radial-gradient(#292929 0.1px, transparent 0.1px), radial-gradient(#292929 0.1px, #FFFFFF 1px);
+    background-size: 28px 28px;
+    background-position: 0 0, 14px 14px;
+}
+
+/*
+ 
+    ___ ___  _  _ _____ _   ___ _  _ ___ ___ 
+   / __/ _ \| \| |_   _/_\ |_ _| \| | __| _ \
+  | (_| (_) | .` | | |/ _ \ | || .` | _||   /
+   \___\___/|_|\_| |_/_/ \_\___|_|\_|___|_|_\
+                                             
+ 
+*/
+.container {
+    width: min(90%, 1200px);
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+
+
+/*
+ 
+   _  _ ___   _   ___  ___ ___ 
+  | || | __| /_\ |   \| __| _ \
+  | __ | _| / _ \| |) | _||   /
+  |_||_|___/_/ \_\___/|___|_|_\
+                               
+ 
+*/
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+.nav__logo-link {
+    text-decoration: none;
+    color: var(--color-brand);
+}
+
+.nav__logo {
+    font-size: 1rem;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    text-align: center;
+    padding: 0;
+}
+
+.nav__link {
+    padding: .8rem .5rem;
+    color: var(--color-brand);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
+
+.nav__link--cta {
+
+    padding: 0.8rem 1.7rem;
+    text-align: center;
+    text-decoration: none;
+
+    /* Diseño del boton personalizado */
+    background: transparent;
+    color: var(--color-brand);
+    position: relative;
+    overflow: hidden;
+    transition: ease-out 0.5s;
+    border: 1px solid;
+    border-radius: .5rem;
+    box-shadow: inset 0 0 0 0 var(--color-gray-darker);
+}
+
+.nav__link--cta:hover {
+    color: #fff;
+    box-shadow: inset 0 -100px 0 0 var(--color-brand)
+}
+
+/* active: es una pseudoclase que se aplica cuando el usuario esta interactuando activamente con el elemento por ejemplo cuando mantiene el botón de mouse presionado */
+
+/* transform: scale (0.9): Reduce el tamaño a un 90% de su tamaño original, creando un efecto visual de "presionado" cuando se interactúa con el elemento */
+.nav__link--cta:active {
+    transform: scale(0.9);
+}
+
+.hero__main {
+    padding: 30px 0;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.hero__title {
+    font-size: clamp(2rem, 5vw + 1rem, 2.8rem);
+}
+
+.hero__figure {
+    width: min(100%, 380px);
+    justify-self: center;
+}
+
+.hero__img {
+    width: 130%;
+}
+
+.hero__paragraph {
+    font-size: 1.2rem;
+    line-height: 2;
+}
+
+.hero__cta {
+    background-color: var(--color-gray-darker);
+    color: #fff;
+    text-decoration: none;
+    padding: 1rem 0;
+    border-radius: .5rem;
+}
+
+.hero__cta:hover {
+    background-color: var(--color-brand);
+}
+
+
+/*
+ 
+   __  __   _   ___ _  _ 
+  |  \/  | /_\ |_ _| \| |
+  | |\/| |/ _ \ | || .` |
+  |_|  |_/_/ \_\___|_|\_|
+                         
+ 
+*/
+
+/* About */
+.about {
+    padding: var(--padding-container);
+}
+
+.title {
+    position: relative;
+    font-size: 2rem;
+}
+
+.title::after {
+    content: '';
+    display: block;
+    height: 2px;
+
+    /* 10px (superior) , auto (derecha) , 0 (inferior) , auto(izquierda) */
+    margin: 10px auto 0 auto;
+    background-color: #000;
+}
+
+
+/* Información sobre mi */
+.information__container {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+
+.information__content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.information__title {
+    font-size: 1rem;
+}
+
+.information__icono {
+    margin-right: 3.4rem;
+}
+
+
+.information__description {
+    display: flex;
+    flex-direction: column;
+    margin-left: 6.1rem;
+    gap: 0.1rem;
+}
+
+.information__year {
+    font-weight: 300;
+    
+}
+
+.information__cargo {
+    font-weight: 500;
+}
+
+
+/* Idiomas - Habilidades */
+.information__language {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.information__name {
+    width: 80px;
+
+    /* Arriba (auto) , Derecha (1rem) , Abajo (Auto) , Izquierda (6.3rem) */
+    margin: auto 1rem auto 6.3rem;
+}
+
+.information__progress {
+    position: relative;
+    background-color: #7D7D7D;
+    height: 10px;
+    width: 30%;
+    border-radius: .5rem;
+    margin-left: 1.5rem;
+}
+
+.information__progress::after {
+    content: '';
+    display: block;
+    height: 100%;
+    width: 20%;
+    background-color: var(--color-brand);
+    border-radius: .5rem;
+}
+
+/* Ingles */
+.information__language--ingles .information__progress::after {
+    width: 20%;
+}
+
+
+/* Html */
+.information__language--html .information__progress::after {
+    width: 90%;
+}
+
+/* CSS3 */
+.information__language--css .information__progress::after {
+    width: 80%;
+}
+
+/* JavaScript */
+.information__language--js .information__progress::after {
+    width: 40%;
+}
+
+/* Php */
+.information__language--php .information__progress::after {
+    width: 60%;
+}
+
+/* Mysql */
+.information__language--mysql .information__progress::after {
+    width: 50%;
+}
+
+/* Power bi */
+.information__language--powerbi .information__progress::after {
+    width: 50%;
+}
+
+
+/* Proyectos */
+
+.proyectos {
+    padding: var(--padding-container);
+}
+
+/* Cards */
+.proyectos__grid {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.proyectos__card {
+    width: min(95%, 450px);
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;    
+    border: 1px solid var(--color-brand);
+    border-bottom-width: 3px;
+    display: flex;
+    flex-direction: column;
+
+    /* Coloca el botón en la parte superior */
+    justify-content: space-between; 
+}
+
+.proyectos__card-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+.proyectos__card-title {
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.proyectos__card-paragraph {
+    font-size: .8rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+    line-height: 2;
+
+    /* Esto permite que el párrafo tome el espacio restante */
+    flex: 1;
+}
+
+.proyectos__card-button {
+    background-color: var(--color-gray-darker);
+    color: #fff;
+    text-align: center;
+    padding: .8rem 1.7rem;
+    text-decoration: none;
+    border-radius: .5rem;
+    
+    /* Reduce el tamaño del botón */
+    width: 50%;
+
+    /* Asegura que el width del botón funcione correctamente */
+    display: block;
+
+}
+
+.proyectos__card-button:hover {
+    background-color: var(--color-brand);
+}
+
+/*
+ 
+    ___ _____ _   
+   / __|_   _/_\  
+  | (__  | |/ _ \ 
+   \___| |_/_/ \_\
+                  
+ 
+*/
+
+.cta {
+    margin: 80px 0;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    padding: 3rem 1rem;
+}
+
+.cta__content {
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+}
+
+.cta__texts {
+    display: grid;
+    gap: 1rem;
+}
+
+.cta__title {
+    font-size: 2rem;
+}
+
+.cta__paragraph {
+    font-size: 1rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+    line-height: 2;
+}
+
+.cta__social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.cta__social-links-items {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cta__social-links--img {
+    width: 25px;
+    height: auto;
+}
+
+.cta_social-links--title {
+    font-size: 1rem;
+    font-weight: 300;
+    text-decoration: none;
+    color: var(--color-brand);
+}
+
+.cta_social-links--title:hover {
+    text-decoration: underline;
+}
+
+.cta__img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*
+ 
+   ___ ___   ___ _____ ___ ___ 
+  | __/ _ \ / _ \_   _| __| _ \
+  | _| (_) | (_) || | | _||   /
+  |_| \___/ \___/ |_| |___|_|_\
+                               
+ 
+*/
+
+.footer {
+    background-color: var(--color-brand);
+    border-radius: 10px;
+}
+
+.footer__content {
+    color: #fff;
+    padding: 80px 0;
+    width: min(90%, 1200px);
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.footer__main {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5rem;
+
+}
+
+.footer__logo {
+    font-size: 1.5rem;
+   
+}
+
+
+/* Social icons */
+.footer__social {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer__social-links {
+    display: inline-block;
+}
+
+.footer__social-img {
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    padding: .3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Links */
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footer__links-nav {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.footer__links-info {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer__links-info:hover {
+    text-decoration: underline;
+}
+
+.footer__copyright {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 2px solid #fff;
+}
+
+.footer__copyright-text {
+    text-align: center;
+}
+
+
+
+/*
+ 
+   ___ ___ ___ ___  ___  _  _ ___ _____   _____ 
+  | _ \ __/ __| _ \/ _ \| \| / __|_ _\ \ / / __|
+  |   / _|\__ \  _/ (_) | .` \__ \| | \ V /| _| 
+  |_|_\___|___/_|  \___/|_|\_|___/___| \_/ |___|
+                                                
+ 
+*/
+
+/* Se activa cuando el viewport mida mas de o igual que 780px */
+@media (width >= 768px) {
+
+    .hero__main {
+        padding: var(--padding-container);
+        gap: 1rem;
+        align-items: center;
+        justify-content: space-between;
+        grid-template-columns: 50% 45%;
+
+        grid-template-areas: 
+        "titulo img"
+        "parrafo img"
+        "link img";
+    }
+
+    .hero__title {
+        grid-area: titulo;
+    }
+
+    .hero__paragraph {
+        grid-area: parrafo;
+    }
+
+    .hero__cta {
+        padding: 1rem 2rem;
+
+        /* Alinea al principio del contenedor */
+        place-self: start;
+        grid-area: link;
+    }
+
+    .hero__figure {
+        grid-area: img;
+    }
+
+    .hero__img {
+        width: 100%;
+    }
+
+    /* CTA */
+    .cta__title {
+        font-size: 1.5rem;
+    }
+
+    .cta__paragraph {
+        font-size: .9rem;
+    }
+
+    .cta_social-links--title {
+        font-size: .9rem;
+    }
+
+    .cta__img {
+        width: 100%;
+    }
+}
+
+
+/* Se activa cuando el viewport mida menos que 780px */
+@media (max-width: 767px) {
+
+    /* Header */
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 1.25rem;
+        padding: 1.25rem;
+    }
+
+    .hero__main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: .5rem;
+        text-align: center;
+    }
+
+    .hero__title {
+        font-size: 2rem;
+    }
+
+    .hero__paragraph {
+        font-size: 1rem;
+    }
+
+    .hero__img {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .hero__buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .hero__cta {
+        margin-top: 1rem;
+        padding: 1rem .7rem;
+    }
+
+    .nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .nav__logo-link {
+        justify-self: center;
+        margin-bottom: 2.5rem;
+    }
+
+    .nav__list {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .nav__link {
+        font-size: .9rem;
+    }
+
+
+    /* Main : sobre mi */
+    .title {
+        text-align: center;
+    }
+
+    .information__container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2.5rem;
+    }
+
+    .information__cargo, .information__year {
+        font-size: .9rem;
+    }
+
+    /* CTA */
+    .cta {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+    }
+
+    .cta__title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .cta__paragraph {
+        font-size: .9rem;
+    }
+
+    .cta_social-links--title {
+        font-size: .9rem;
+    }
+
+    .cta__figure {
+        display: none;
+    }
+
+    /* Footer */
+    
+    .footer {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer__content {
+        text-align: center;
+    }
+
+    .footer__main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__logo{
+        font-size: 1.3rem;
+    }
+
+    .footer__copyright-text {
+        font-size: .7rem;
+    }
+
+}

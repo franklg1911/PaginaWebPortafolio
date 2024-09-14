@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <!-- Icono de pestaña -->
+    <link
+      rel="shortcut icon"
+      href="assets/img/header/icono_pestaña.svg"
+      type="image/x-icon"
+    />
+    <!-- Estilos -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Contenedor principal -->
+    <div class="container">
+      <!-- Header -->
+      <header class="hero">
+        <!-- Navegador -->
+        <nav class="nav">
+          <!-- Logo -->
+          <a class="nav__logo-link">
+            <h2 class="nav__logo">FRANK EDUARDO LÓPEZ GONZALES</h2>
+          </a>
+
+          <!-- Lista -->
+          <ul class="nav__list">
+            <li class="nav__element">
+              <a href="index.html" class="nav__link">Inicio</a>
+            </li>
+            <li class="nav__element">
+              <a href="#sobremi" class="nav__link">Sobre mí</a>
+            </li>
+            <li class="nav__element">
+              <a href="#contacto" class="nav__link nav__link--cta">Contacto</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Sección principal -->
+        <section class="hero__main">
+          <h1 class="hero__title">Bienvenido a mi portafolio</h1>
+
+          <!-- Imagen principal -->
+          <figure class="hero__figure">
+            <img
+              src="assets/img/header/mockup.svg"
+              alt="Principal"
+              class="hero__img"
+            />
+          </figure>
+
+          <!-- Descripción -->
+          <p class="hero__paragraph">
+            El éxito en el desarrollo web no se mide por lo que sabes, sino por
+            lo que estás dispuesto a aprender.
+          </p>
+
+          <!-- Botones principales -->
+          <div class="hero__buttons">
+            <a href="#proyectos" class="hero__cta">Saber más</a>
+            <a
+              href="https://drive.google.com/file/d/1uATnf2L4NAxg3cM_uLH9k2ZrMByl79NT/view?usp=sharing"
+              class="hero__cta"
+              target="_blank"
+              >Descargar CV</a
+            >
+          </div>
+        </section>
+      </header>
+
+      <main class="main">
+        <!-- Sobre mí -->
+        <section class="about">
+          <h2 class="title" id="sobremi">Sobre mí</h2>
+
+          <!-- Información sobre mí -->
+          <section class="information__container">
+            <!-- Experiencia laboral -->
+            <article class="information__article">
+              <div class="information__content">
+                <img
+                  src="assets/img/icon/icon_experience.svg"
+                  alt="icon experience"
+                  class="information__icono"
+                />
+                <h3 class="information__title">Experiencia laboral</h3>
+              </div>
+              <div class="information__description">
+                <span class="information__cargo">Asistente tecnológico</span>
+                <span class="information__year">2022 - 2023</span>
+              </div>
+            </article>
+            <!-- Formación / Estudios -->
+            <article class="information__article">
+              <div class="information__content">
+                <img
+                  src="assets/img/icon/icon_formacion-estudios.svg"
+                  alt="icon experience"
+                  class="information__icono"
+                />
+                <h3 class="information__title">Formación / Estudios</h3>
+              </div>
+              <div class="information__description">
+                <span class="information__cargo"
+                  >Universidad Tecnológica del Perú</span
+                >
+                <span class="information__year">2019 - 2024</span>
+              </div>
+            </article>
+            <!-- Idiomas -->
+            <article class="information__article">
+              <div class="information__content">
+                <img
+                  src="assets/img/icon/icon_idiomas.svg"
+                  alt="icon experience"
+                  class="information__icono"
+                />
+                <h3 class="information__title">Idiomas</h3>
+              </div>
+              <!-- Inglés -->
+              <div class="information__language information__language--ingles">
+                <span class="information__name">Inglés</span>
+                <div
+                  class="information__progress information__progress--ingles"
+                ></div>
+              </div>
+            </article>
+            <!-- Habilidades -->
+            <article class="information__article">
+              <div class="information__content">
+                <img
+                  src="assets/img/icon/icon_habilidades.svg"
+                  alt="icon experience"
+                  class="information__icono"
+                />
+                <h3 class="information__title">Habilidades</h3>
+              </div>
+              <!-- HTML5 -->
+              <div class="information__language information__language--html">
+                <span class="information__name">HTML5</span>
+                <div
+                  class="information__progress information__progress--html"
+                ></div>
+              </div>
+              <!-- CSS3 -->
+              <div class="information__language information__language--css">
+                <span class="information__name">CSS3</span>
+                <div
+                  class="information__progress information__progress--css"
+                ></div>
+              </div>
+              <!-- JavaScript -->
+              <div class="information__language information__language--js">
+                <span class="information__name">JavaScript</span>
+                <div
+                  class="information__progress information__progress--js"
+                ></div>
+              </div>
+              <!-- PHP -->
+              <div class="information__language information__language--php">
+                <span class="information__name">Php</span>
+                <div
+                  class="information__progress information__progress--php"
+                ></div>
+              </div>
+              <!-- MySQL -->
+              <div class="information__language information__language--mysql">
+                <span class="information__name">MySQL</span>
+                <div
+                  class="information__progress information__progress--mysql"
+                ></div>
+              </div>
+              <!-- Power BI -->
+              <div class="information__language information__language--powerbi">
+                <span class="information__name">Power BI</span>
+                <div
+                  class="information__progress information__progress--powerbi"
+                ></div>
+              </div>
+            </article>
+          </section>
+        </section>
+
+        <!-- Proyectos -->
+        <section class="proyectos">
+          <h2 class="title" id="proyectos">Proyectos</h2>
+          <section class="proyectos__grid">
+            <!-- Card 1 -->
+            <article class="proyectos__card">
+              <img
+                src="assets/img/main/card_login.svg"
+                alt="Card 1"
+                class="proyectos__card-img"
+              />
+              <h3 class="proyectos__card-title">Página de login</h3>
+              <p class="proyectos__card-paragraph">
+                Diseño y desarrollo de una página de login simple utilizando
+                HTML y CSS. Ideal para entender una interfaz de usuario básica.
+              </p>
+              <a
+                href="https://franklg1911.github.io/PaginaLogin/"
+                class="proyectos__card-button"
+                target="_blank"
+                >Visualizar</a
+              >
+            </article>
+
+            <!-- Card 2 -->
+            <article class="proyectos__card">
+              <img
+                src="assets/img/main/card_pageshop.svg"
+                alt="Card 1"
+                class="proyectos__card-img"
+              />
+              <h3 class="proyectos__card-title">Página de ventas</h3>
+              <p class="proyectos__card-paragraph">
+                Página de ventas diseñada con HTML y CSS. Muestra un diseño
+                atractivo y funcional para la venta en línea de productos de
+                moda.
+              </p>
+              <a
+                href="https://franklg1911.github.io/PaginaShopClothes/"
+                class="proyectos__card-button"
+                target="_blank"
+                >Visualizar</a
+              >
+            </article>
+
+            <!-- Card 3 -->
+            <article class="proyectos__card">
+              <img
+                src="assets/img/main/card_pagecourses.svg"
+                alt="Card 1"
+                class="proyectos__card-img"
+              />
+              <h3 class="proyectos__card-title">Página de cursos</h3>
+              <p class="proyectos__card-paragraph">
+                Página web desarrollada con HTML y CSS, diseñada específicamente
+                para la venta en línea de cursos.
+              </p>
+              <a
+                href="https://franklg1911.github.io/PaginaWebCurso/"
+                class="proyectos__card-button"
+                target="_blank"
+                >Visualizar</a
+              >
+            </article>
+          </section>
+        </section>
+
+        <!-- Contactos -->
+        <section class="cta">
+          <article class="cta__content">
+            <div class="cta__texts">
+              <h2 class="cta__title" id="contacto">¿Más información?</h2>
+              <p class="cta__paragraph">
+                Ponte en contacto conmigo a través de los siguientes enlaces y
+                te responderé con mayor brevedad posible.
+              </p>
+
+              <div class="cta__social-links">
+                <!-- Whtasapp -->
+                <div class="cta__social-links-items">
+                  <img
+                    src="assets/img/main/cta_wsp.svg"
+                    alt="Whatsapp"
+                    class="cta__social-links--img"
+                  />
+                  <a
+                    href="https://wa.me/51992050559"
+                    target="_blank"
+                    class="cta_social-links--title"
+                    >992050559</a
+                  >
+                </div>
+
+                <!-- Gmail -->
+                <div class="cta__social-links-items">
+                  <img
+                    src="assets/img/main/cta_email.svg"
+                    alt="Whatsapp"
+                    class="cta__social-links--img"
+                  />
+                  <a
+                    href="mailto:tu_email@gmail.com?subject=Asunto%20del%20Correo&body=Mensaje%20del%20Correo"
+                    target="_blank"
+                    class="cta_social-links--title"
+                  >
+                    frank.lopezglg@gmail.com
+                  </a>
+                </div>
+
+                <!-- Linkedin -->
+                <div class="cta__social-links-items">
+                  <img
+                    src="assets/img/main/cta_linkedin.svg"
+                    alt="Whatsapp"
+                    class="cta__social-links--img"
+                  />
+                  <a
+                    class="cta_social-links--title"
+                    href="https://www.linkedin.com/in/frank-eduardo-l%C3%B3pez-gonzales-609909193/"
+                    target="_blank"
+                  >
+                    Frank Eduardo López Gonzales
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <figure class="cta__figure">
+              <img
+                src="assets/img/main/cta_contact.svg"
+                alt="Contactos"
+                class="cta__img"
+              />
+            </figure>
+          </article>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <section class="footer__content">
+          <section class="footer__main">
+            <h3 class="footer__logo">Portafolio de Frank Eduardo</h3>
+
+            <!-- Social icons -->
+            <nav class="footer__social">
+              <a
+                href="https://github.com/franklg1911"
+                class="footer__social-links"
+                target="_blank"
+              >
+                <img
+                  src="../assets/img/footer/footer_gitHub.svg"
+                  class="footer__social-img"
+                  alt="gitHub"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/fransua_1912h/"
+                class="footer__social-links"
+                target="_blank"
+                ><img
+                  src="../assets/img/footer/footer_ig.svg"
+                  class="footer__social-img"
+                  alt="Ig"
+              /></a>
+            </nav>
+
+            <!-- Links -->
+            <div class="footer__links">
+              <h3 class="footer__links-title">Enlaces</h3>
+
+              <!-- Nav links -->
+              <nav class="footer__links-nav">
+                <a href="index.html" class="footer__links-info">Inicio</a>
+                <a href="#" class="footer__links-info">Sobre mí</a>
+                <a href="#" class="footer__links-info">Contacto</a>
+              </nav>
+            </div>
+          </section>
+
+          <!-- Copyright -->
+          <section class="footer__copyright">
+            <p class="footer__copyright-text">
+              &copy; 2024 Frank Eduardo. Todos los derechos reservados.
+            </p>
+          </section>
+        </section>
+      </footer>
+    </div>
+  </body>
+</html>
