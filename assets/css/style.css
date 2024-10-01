@@ -299,6 +299,10 @@ body {
     width: 50%;
 }
 
+/* Python */
+.information__language--python .information__progress::after {
+    width: 30%;
+}
 
 /* Proyectos */
 
